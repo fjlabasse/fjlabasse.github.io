@@ -1,0 +1,28 @@
+.container-nosotros {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    .container-nosotros-info {
+        h3, hr{
+            color: #458a54;
+            font-weight: bold;
+        }
+        p {
+            color: map-get($colors,green);
+        }
+    }
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        .container-nosotros-redes {
+            transition: 1.2s;
+            &:hover {
+                transform: rotateZ(360deg);
+                transition: 1.2s;
+            }
+        }
+        
+    }
+}

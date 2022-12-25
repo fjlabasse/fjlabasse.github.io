@@ -1,0 +1,50 @@
+
+.container-sucursales {
+    background-image: url(/assets/img/img-body.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid green;
+}
+.mapas-grid {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 30px;
+    border-radius: 30px;
+    background: rgb(128,179,78);
+    background: linear-gradient(90deg, rgba(128,179,78,1) 25%, rgba(0,143,0,1) 100%);
+    margin: 10px;
+    margin-top: 50px;
+
+    .body-mapas-grid {
+        width: 50%;
+    }
+    .iframe-mapas-grid {
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border-left: 2px solid green;
+        overflow: hidden;
+    }
+    
+}
+@media (max-width: 768px) {
+    .mapas-grid {
+        grid-template-columns: auto;
+        .body-mapas-grid {
+            width: 100%;
+        }
+        .iframe-mapas-grid {
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            overflow: hidden;
+            border-top: 2px solid green;
+            border-left: none;
+        }
+    }
+}
+

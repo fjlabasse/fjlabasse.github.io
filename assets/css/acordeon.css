@@ -1,0 +1,62 @@
+/* Estilo plans */
+.acordeon-planes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  background-image: url(/assets/img/banner\ verde.png);
+  margin-top: 30px;
+}
+.acordeon-planes summary {
+  animation: summarycolorchange 4s linear infinite alternate;
+  background: #80b34e;
+  color: white;
+  list-style: none;
+  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: green 2px solid;
+  font-weight: bold;
+}
+.acordeon-planes p {
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(0deg, #80b34e 0%, rgba(129, 179, 78, 0.4666666667) 100%);
+  border: #80b34e 1px solid;
+  border-radius: 20px;
+}
+.acordeon-planes .button-suscribe {
+  text-align: center;
+}
+.acordeon-planes .button-suscribe button {
+  animation: buttoncolorchange 1s linear infinite alternate;
+  padding: 10px;
+  border-radius: 25px;
+  border: green solid 2px;
+  background-color: #80b34e;
+  color: white;
+  cursor: pointer;
+}
+.acordeon-planes .button-suscribe button:active {
+  background-color: #c66c2e;
+  color: lightgreen;
+}
+.acordeon-planes .button-suscribe h4 {
+  padding-top: 5px;
+}
+
+@keyframes buttoncolorchange {
+  50% {
+    background: yellow;
+  }
+  100% {
+    background: green;
+  }
+}/*# sourceMappingURL=acordeon.css.map */

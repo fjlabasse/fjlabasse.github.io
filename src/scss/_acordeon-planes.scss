@@ -1,0 +1,63 @@
+/* Estilo acordeon-planes */
+.acordeon-planes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    background-image: url(/assets/img/banner\ verde.png);
+    margin-top: 30px;
+    summary {
+        animation: summarycolorchange 4s linear infinite alternate;
+        background: map-get($colors,green);
+        color: white;
+        list-style: none;
+        cursor: pointer;
+        padding: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: green 2px solid;
+        font-weight: bold;
+    }
+    p {
+        padding: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        background: linear-gradient(0deg, #80b34e 0%, #81b34e77 100%);
+        border: #80b34e 1px solid;
+        border-radius: 20px;
+    }
+    .button-suscribe {
+        text-align: center;
+        button {
+            animation: buttoncolorchange 1s linear infinite alternate;
+            padding: 10px;
+            border-radius: 25px;
+            border: green solid 2px;
+            background-color: map-get($colors,green);
+            color: white;
+            cursor: pointer;
+            &:active {
+                background-color: #c66c2e;
+                color: lightgreen;
+
+            }
+        }
+        h4 {
+            padding-top: 5px;
+        }
+    }
+}
+
+@keyframes buttoncolorchange {
+    50% {
+        background: yellow;
+    }
+    100% {
+        background: green;
+    }
+}

@@ -1,0 +1,48 @@
+/* Estilos card-index */
+.tarjetas-index-planes {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .cards {
+        background-image: url(/assets/img/img-body.jpg);
+        background-size: contain;
+        border-radius: 30px;
+        border: 5px solid map-get($colors,green);
+    }
+    .card {
+        background-image: radial-gradient(circle, rgba(128,179,78,1) 0%, rgba(0,143,0,1) 100%);
+        box-shadow: inset 2px 2px 20px 2px #80b34e;
+        border-radius: 50px;
+        border: #80b34e solid 1px;
+        margin: 10px;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.03);
+        }
+        .card-body-link {
+            text-align: center;
+            margin: 20px;
+        }
+        .card-title {
+            color: #d8ff3c;
+        }
+        .card-text {
+            color: white;
+        }
+        .card-link {
+            text-decoration: none;
+            color: #d8ff3c;
+            background-color: #c66c2e;
+            border: solid 2px;
+            border-radius: 20px;
+            padding: 5px;
+            
+        }
+        .card-link:hover {
+            color: white;
+            transform: scale(1.5);
+            transition: 1s;
+        }
+    }
+}
+
+

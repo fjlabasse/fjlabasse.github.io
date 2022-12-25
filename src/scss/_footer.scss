@@ -1,0 +1,16 @@
+/* Estilos footer */
+footer {
+    border-top: map-get($colors,green) solid 2px;
+    background-color: #81b34e91;
+    color: white;
+    p {
+        padding-bottom: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #458a54;
+        &:hover {
+            color: #c66c2e;
+        }
+    }
+}

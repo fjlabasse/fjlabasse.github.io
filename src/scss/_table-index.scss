@@ -1,0 +1,32 @@
+/* Estilos table-index-cronograma */
+.tabla-index-cronograma {
+    margin-top: 15px;
+    text-align: center;
+    th:nth-child(1) {
+        border-top-left-radius: 30px;
+    }
+    th:nth-child(7) {
+        border-top-right-radius: 30px;
+    }
+    .hora {
+        font-size: 13px;
+    }
+    thead {
+        background: linear-gradient(0deg, #80b34e 0%, #81b34e77 100%);
+    }
+    .bjj {
+        background-color: map-get($colors,green);
+    }
+    .kick {
+        background-color: #81b34e91;
+    }
+    caption {
+        border: green solid 1px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 30px;
+        text-align: center;
+        color: black;
+        background-image: linear-gradient(0deg, #80b34e 0%, rgba(255,255,255,1));
+    }
+}

@@ -1,0 +1,23 @@
+/* Estilos navbar */
+nav {
+    background-image: linear-gradient(0deg, #ffffff 0%, #81b34e4b);
+    .nav-link {
+        color: #458a54;
+        font-size: 20px;
+        font-weight: bold;
+        &:hover {
+            color: #c66c2e;
+        }
+    }
+}
+
+.breadcrumb-item {
+    padding-top: 10px;
+    padding-left: 20px;
+    a {
+    text-decoration: none;
+    color: map-get($colors,green);
+    cursor: pointer;
+    }
+}
+

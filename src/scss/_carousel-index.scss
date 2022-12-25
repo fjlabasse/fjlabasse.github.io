@@ -1,0 +1,14 @@
+/* Estilos carousel */
+.carousel-index {
+    .carousel-item {
+        img {
+            height: 600px;
+            object-fit: cover;
+        }
+        .h3 {
+            color: white;
+            background-color: map-get($colors,green);
+            border-radius: 15px;
+        }
+    }
+}
